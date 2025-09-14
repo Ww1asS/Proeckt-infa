@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BA592B922E7709D900AE95E3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA592B912E7709D900AE95E3 /* OpenGL.framework */; };
+		BA592B942E7709E700AE95E3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA592B932E7709E700AE95E3 /* IOKit.framework */; };
+		BA592B962E7709EE00AE95E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA592B952E7709EE00AE95E3 /* Cocoa.framework */; };
+		BA592B982E770A1D00AE95E3 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA592B972E770A1D00AE95E3 /* libraylib.a */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		BA969D742E6DBB9F00E85363 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,6 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA592B912E7709D900AE95E3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BA592B932E7709E700AE95E3 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		BA592B952E7709EE00AE95E3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BA592B972E770A1D00AE95E3 /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = "../../Downloads/raylib-master/src/libraylib.a"; sourceTree = "<group>"; };
 		BA969D762E6DBB9F00E85363 /* Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Project; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -35,16 +46,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA592B982E770A1D00AE95E3 /* libraylib.a in Frameworks */,
+				BA592B962E7709EE00AE95E3 /* Cocoa.framework in Frameworks */,
+				BA592B942E7709E700AE95E3 /* IOKit.framework in Frameworks */,
+				BA592B922E7709D900AE95E3 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA592B902E7709D900AE95E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA592B972E770A1D00AE95E3 /* libraylib.a */,
+				BA592B952E7709EE00AE95E3 /* Cocoa.framework */,
+				BA592B932E7709E700AE95E3 /* IOKit.framework */,
+				BA592B912E7709D900AE95E3 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA969D6D2E6DBB9F00E85363 = {
 			isa = PBXGroup;
 			children = (
 				BA969D782E6DBB9F00E85363 /* Project */,
+				BA592B902E7709D900AE95E3 /* Frameworks */,
 				BA969D772E6DBB9F00E85363 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -245,6 +272,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "/Users/alexmac/Downloads/raylib-master/src";
+				LIBRARY_SEARCH_PATHS = "/Users/alexmac/Downloads/raylib-master/src";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +282,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "/Users/alexmac/Downloads/raylib-master/src";
+				LIBRARY_SEARCH_PATHS = "/Users/alexmac/Downloads/raylib-master/src";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
