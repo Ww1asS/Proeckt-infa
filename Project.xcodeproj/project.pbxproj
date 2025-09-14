@@ -273,6 +273,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = "/Users/alexmac/Downloads/raylib-master/src";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				LIBRARY_SEARCH_PATHS = "/Users/alexmac/Downloads/raylib-master/src";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -283,6 +284,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = "/Users/alexmac/Downloads/raylib-master/src";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				LIBRARY_SEARCH_PATHS = "/Users/alexmac/Downloads/raylib-master/src";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
